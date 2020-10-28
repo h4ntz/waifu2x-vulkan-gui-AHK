@@ -49,7 +49,7 @@ outputfile := outdir "\" outname "(x" scalar ")" settta2 "." ext
 GuiControl, Text, Input, %inputfile%
 GuiControl, Text, Output, %outputfile%
 if (A_GuiControl = "Start")
-run, waifu2x-ncnn-vulkan.exe -i %inputfile% -o %outputfile% -n %Noise% -s %scalar% -f %ext% %settta%
+run, waifu2x-ncnn-vulkan.exe -i "%inputfile%" -o "%outputfile%" -n %Noise% -s %scalar% -f %ext% %settta%
 return
 
 Selectoutput:
